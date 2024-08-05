@@ -11,4 +11,16 @@ class Transaction extends Model
         'buyer_id',
         'product_id',
     ];
+
+    //relacion con comprador
+    public function buyer()
+    {
+        return $this->belongsTo(Buyer::class);
+    }
+
+    //relacion con producto
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }
