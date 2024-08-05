@@ -1,6 +1,12 @@
 
 ![Banner](banner.png)
 
+### Requerimientos
+```
+1. PHP 7.4
+2. Mysql desde la version 5.7
+```
+
 1. git clone 
 ```
 git clone https://github.com/gsanchez1687/LaravelApiRestfull.git
