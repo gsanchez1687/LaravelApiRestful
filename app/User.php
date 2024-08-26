@@ -65,4 +65,21 @@ class User extends Authenticatable
     {
         return str_random(40);
     }
+
+
+    //definiendo un mutador para el nombre del usuario
+    public function setNameAttribute($name)
+    {
+        $this->attributes['name'] = strtolower($name);
+    }
+
+    public function getNameAttribute($name){
+        return ucwords($name);
+    }
+
+    //definiendo un mutador para el correo del usuario
+    public function setEmailAttribute($email)
+    {
+        $this->attributes['email'] = strtolower($email);
+    }
 }
